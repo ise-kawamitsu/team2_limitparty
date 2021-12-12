@@ -1,0 +1,44 @@
+{% extends 'freeverapp/base.html' %}
+{% load static %}
+
+{% block title%}なぞなぞ{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'game/css/quiz.css' %}">
+{% endblock css %}
+
+
+{% block header %}
+{% endblock header %}
+
+
+{% block content %}
+<h1>なぞなぞ</h1>
+
+<div class="quiz">
+    <span class="quiz_top">問題</span>
+    <p>{{ quiz }}</p>
+</div>
+
+{% if  ans %}
+<div class="answer">
+    <details>
+        <summary>解答を表示する</summary>
+        <p>{{ ans }}</p>
+    </details>
+</div>
+{% endif %}
+
+<div class="next">
+    <a href="{% url 'f_quiz' %}">次の問題</a>
+</div>
+
+
+<div class="back">
+    <a href="{% url 'f_top' %}">戻る</a>
+</div>
+{% endblock content %}
+
+
+{% block footer %}
+{% endblock footer %}

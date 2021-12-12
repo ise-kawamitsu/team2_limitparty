@@ -1,0 +1,143 @@
+{% extends 'paidverapp/base.html' %}
+{% load static %}
+
+{% block title%}有料版 Top Page{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'paidverapp/css/top.css' %}">
+    <script src="{% static 'paidverapp/js/timer.js' %}"></script>
+{% endblock css %}
+
+
+{% block header %}
+{% endblock header %}
+
+
+{% block content %}
+<h1> Limit Party ~Paid version~
+    <strong style="text-align: right;">
+    ようこそ {{ user.get_username }} さん
+    </strong>
+</h1>
+
+
+<div class="timer">
+    <span class="timer_title">Timer</span>
+    <nobr id="timer"></nobr>
+</div>
+
+<div class="btn">
+    <button id="startbutton">Start</button>
+    <button id="stopbutton">Stop</button>
+    <button id="resetbutton">Reset</button>
+</div>
+
+<div>
+    <iframe id="webgl-frame" class="iframe-inner" 
+    src="https://object-storage.tyo1.conoha.io/v1/nc_df3bdbc45bc04950b558834f5728517a/unityroom_production/game/25498/webgl/play.html"
+    width="950px" height="550px frameborder=" scrolling="auto"></iframe>
+    </div>
+
+
+<div class="box">
+    <label for="label">ClimbCat</label>
+    <input type="checkbox" id="label"/>
+    <div class="hidden">
+        <!--非表示ここから-->   
+        <div> 
+            <img src="{% static 'img/game4.png' %}" width="300" height="250" class="float">
+            <p>猫をキーボードのスペースキーと矢印キーで操作して星を集めながら上にあるゴールの旗を目指そう！</p>
+            <p>操作は、スペースキーでジャンプ、矢印キーで横移動です。</p>
+            <a href="https://unityroom.com/games/climbcat2" target="_blank" rel="noopener noreferrer" class="open">Open the game!</a>
+            <p>gameのURL: https://unityroom.com/games/climbcat2</p>
+        </div>
+        <div>
+            <iframe id="webgl-frame" class="iframe-inner" 
+            src="https://object-storage.tyo1.conoha.io/v1/nc_df3bdbc45bc04950b558834f5728517a/unityroom_production/game/25393/webgl/play.html"
+             width="1000px" height="600px frameborder=" scrolling="auto"></iframe>
+            <!-- <iframe class="iframe-inner" frameborder="0" id="webgl-frame" scrolling="auto"
+             src="https://object-storage.tyo1.conoha.io/v1/nc_df3bdbc45bc04950b558834f5728517a/unityroom_production/game/25393/webgl/play.html">
+            </iframe> -->
+        </div>
+        <!--ここまで-->
+      </div>
+</div>
+
+<div class="box">
+    <label for="label2">タコケシ</label>
+    <input type="checkbox" id="label2"/>
+    <div class="hidden">
+        <!--非表示ここから-->   
+        <div> 
+            <img src="{% static 'img/game5.png' %}" width="300" height="200" class="float">
+            <p>同じ色のタコを繋げて消そう！</p>
+            <p>クリックしてタコをなぞるとタコが消えます。</p>
+            <p>制限時間は30秒。得点を競いましょう！</p>
+            <a href="https://unityroom.com/games/takokeshi" target="_blank" rel="noopener noreferrer" class="open">Open the game!</a>
+            <p>gameのURL: https://unityroom.com/games/takokeshi</p>
+        </div>
+        <div>
+            <iframe class="iframe-inner" 
+            src="https://object-storage.tyo1.conoha.io/v1/nc_df3bdbc45bc04950b558834f5728517a/unityroom_production/game/25387/webgl/play.html"
+            width="1000px" height="600px frameborder=" scrolling="auto"></iframe>
+        </div>
+        
+        <!--ここまで-->
+      </div>
+</div>
+
+<div class="box">
+    <label for="label3">オセロ</label>
+    <input type="checkbox" id="label3"/>
+    <div class="hidden">
+        <!--非表示ここから-->   
+        <div>
+            <img src="{% static 'img/game1.png' %}" width="300" height="300" class="float">
+            <p>画面上の空いているマス目をクリック（タップ）すると、自分の石を置くことができます。自分の石で相手の石を挟むと、相手の石がひっくり返って自分の色になります。</p>
+            <p>最終的に盤面が全部埋まるか、どちらも石を置く場所が無くなるとゲームが終わります。ゲームが終わった時点で、盤面の自分の色の石の数が多いほうが勝ちとなります。</p>
+            <a href="https://www.afsgames.com/reversi.htm" target="_blank" rel="noopener noreferrer" class="open">Open the game!</a>
+            <p>gameのURL: https://www.afsgames.com/reversi.htm</p>
+        </div>
+        <!--ここまで-->
+      </div>
+</div>
+
+<div class="box">
+    <label for="label4">ババ抜き</label>
+    <input type="checkbox" id="label4"/>
+    <div class="hidden">
+        <!--非表示ここから-->   
+        <div> 
+            <img src="{% static 'img/game2.png' %}" width="300" height="300" class="float">
+            <p>同じ数字の札が2枚そろったら場に捨て、手札を減らしていきます。最後まで残っていた人、つまり最後にジョーカーを保持していた人が 負けとなります。</p>
+            <p>とても簡単で、運にのみ左右されるゲームなのでどんな人でも楽しむことができるのが、このゲームの特徴です。</p>
+            <a href="ttps://playingcards.jp/game/babanuki/" target="_blank" rel="noopener noreferrer" class="open">Open the game!</a>
+            <p>gameのURL: https://playingcards.jp/game/babanuki/</p>
+        </div>
+        <!--ここまで-->
+      </div>
+</div>
+
+<div class="box">
+    <label for="label5">UNO</label>
+    <input type="checkbox" id="label5"/>
+    <div class="hidden">
+        <!--非表示ここから-->   
+        <div> 
+            <img src="{% static 'img/game3.png' %}" width="300" height="300" class="float">
+            <p>ルールは場と同じベース色のカードを時計回りの順番で提出していくのが基本になります。特殊カードは「カードを取らせる」「色変化」「逆周り」「色変化&カードを取らせる」などあり。</p>
+            <p>一番はじめにカードをなくせば勝利。ラスト一枚になるカード提出時にはUNOコールが必要です。</p>
+            <a href="https://game16.net/burage/table/card/four-colors-monument/" target="_blank" rel="noopener noreferrer" class="open">Open the game!</a>
+            <p>gameのURL: https://game16.net/burage/table/card/four-colors-monument/</p>
+        </div>
+        <!--ここまで-->
+      </div>
+</div>
+
+<div class="return_top">
+    <a href="{% url 'top' %}">戻る</a>
+</div>
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

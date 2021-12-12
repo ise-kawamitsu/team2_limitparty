@@ -1,0 +1,39 @@
+
+/* タイトル画面css */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FCA909;
+}
+h1 {
+    margin-top: 200px;
+    font-family: Century;
+    font-size: 400%;
+    text-align: center;
+    color: #FFFFFF;
+}
+h2 {
+    margin-top: 30px;
+    font-family: Century;
+    font-size: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.start {
+    margin-top: 100px;
+    font-family: Century;
+    font-size: 200%;
+    text-align: center;
+    color: #FFFFFF;
+}
+/* bottan装飾 */
+.start a {
+    color: black;
+    background: yellow;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+{% extends 'freeverapp/base.html' %}
+{% load static %}
+
+{% block title%}Limit Party{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'top.css' %}">
+    <!-- <script src="top.js"></script> -->
+{% endblock css %}
+
+
+{% block header %}
+{% endblock header %}
+
+
+{% block content %}
+<h1 class="top_title">Limit Party</h1>
+
+<div class="f_top">
+    <a href="{% url 'f_top' %}">無料ver</a>
+</div>
+
+<div class="p_top">
+    <a href="{% url 'login' %}">有料ver</a>
+</div>
+{% endblock content %}
+
+
+{% block footer %}
+{% endblock footer %}

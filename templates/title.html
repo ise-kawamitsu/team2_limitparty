@@ -1,0 +1,29 @@
+{% extends 'freeverapp/base.html' %}
+{% load static %}
+
+{% block title%}Limit Party{% endblock title %}
+
+{% block css %}
+    <!-- <link rel="stylesheet" href="{% static 'freeverapp/css/timer.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'title.css' %}">
+{% endblock css %}
+
+
+{% block header %}
+{% endblock header %}
+
+
+{% block content %}
+<h1>Limit Partyへようこそ</h1>
+
+<h2>これはオンライン飲み会を円滑に進行するサービスです！</h2>
+
+<div class="start">
+    <a href="{% url 'top' %}">Limit Partyへ(Start!)</a>
+</div>
+
+{% endblock content %}
+
+
+{% block footer %}
+{% endblock footer %}
