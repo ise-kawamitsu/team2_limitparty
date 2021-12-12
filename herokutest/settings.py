@@ -19,7 +19,7 @@ try:
 except ImportError:
     pass
 
-ALLOWED_HOSTS = ['127.0.0.1', 'afternoon-beach-94662.herokuapp.com']
+ALLOWED_HOSTS = ['afternoon-beach-94662.herokuapp.com']
 
 
 # Application definition
