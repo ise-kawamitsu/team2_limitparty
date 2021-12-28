@@ -22,15 +22,12 @@
 .f_top {
     color: white;
     font-family: Century;
-    font-size: 20pt;
+    font-size: 30pt;
     font-weight: bold;
-    margin: 2em 3em;
-    display: inline-block;
-    height: 150px;
-    width: 200px;
-    padding: 50px 50px;
-    text-decoration: none;
-    border: 1px;
+    margin: 1em 1em;
+    height: 200px;
+    width: 250px;
+    padding: 65px 60px;
     background: #FCA909;
     box-shadow: 0px 2px 4px #575;
   }
@@ -51,18 +48,31 @@
   color: white;
 }
 
+.f_content {
+  color: black;
+  font-family: Century;
+  font-weight: bold;
+  margin: 2.5em 0em;
+  height: 200px;
+  width: 390px;
+  padding: 20px 10px;
+  background: #ebe8e3;
+}
+
+.f {
+  display: flex;
+}
+
 .p_top {
     color: white;
     font-family: Century;
-    font-size: 20pt;
+    font-size: 30pt;
     font-weight: bold;
-    margin: 2em 2em;
-    display: inline-block;
-    height: 150px;
-    width: 200px;
-    padding: 50px 50px;
+    margin: 1em 1em;
+    height: 200px;
+    width: 250px;
+    padding: 65px 60px;
     text-decoration: none;
-    border: 1px;
     background:#FCA909;
     box-shadow: 0px 2px 4px #575;
   }
@@ -81,4 +91,19 @@
 
 .p_top a:active {
   color: white;
+}
+
+.p_content {
+  color: black;
+  font-family: Century;
+  font-weight: bold;
+  margin: 2.5em 0em;
+  height: 200px;
+  width: 390px;
+  padding: 10px 10px;
+  background: #ebe8e3;
+}
+
+.p {
+  display: flex;
 }
