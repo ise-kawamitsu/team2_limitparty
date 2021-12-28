@@ -16,12 +16,29 @@
 {% block content %}
 <h1 class="top_title">Limit Party</h1>
 
-<div class="f_top">
-    <a href="{% url 'f_top' %}">無料ver</a>
+<div class="f">
+    <div class="f_top">
+        <a href="{% url 'f_top' %}">無料版</a>
+    </div>
+    <div class="f_content">
+        <p>＜機能＞</p>
+        <p>タイマー機能・話題機能</p>
+        <p>＜ゲーム＞</p>
+        <p>なぞなぞ・間違い探し・オセロ・ババ抜き・UNO</p>
+    </div>
 </div>
 
-<div class="p_top">
-    <a href="{% url 'login' %}">有料ver</a>
+<div class="p">
+    <div class="p_top">
+        <a href="{% url 'login' %}">有料版</a>
+    </div>
+    <div class="p_content">
+        <p>＜機能＞</p>
+        <p>タイマー機能・話題機能</p>
+        <p>＜ゲーム＞</p>
+        <p>【オリジナル】アクションゲーム・パズルゲーム</p>
+        <p>なぞなぞ・間違い探し・オセロ・ババ抜き・UNO</p>
+    </div>
 </div>
 {% endblock content %}
 
